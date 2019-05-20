@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="img/favicon.gif">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #000;
+    }
+
+    form {
+      border: 3px solid #f1f1f1;
+    }
+
+    input[type=text],
+    input[type=password] {
+      width: 95%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #FFB03B;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 95%;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+    }
+
+    img.avatar {
+      width: 10%;
+      border-radius: 10%;
+    }
+
+
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+
+      .cancelbtn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style:width="auto">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img class="navbar-brand" style="height:100px; padding: 0px;" src="img/pl.png">
+
+      <a class="navbar-brand" style="padding-top:40px;" href="#page-top">Online Food Court Services</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="navbar-brand" style="padding-top:40px;" href="index.html">Home</a></li>
+        <li><a class="navbar-brand" style="padding-top:40px;" href="event.html">Event</a></li>
+        <li><a class="navbar-brand" style="padding-top:40px;" href="menu.html">Menu</a></li>
+        <li><a class="navbar-brand" style="padding-top:40px;" href="Login.html">Login</a></li>
+        <li><a class="navbar-brand" style="padding-top:40px;" href="signup.html">Sign up</a></li>
+        <li><a class="navbar-brand" style="padding-top:40px;" href="reserve.html">Reserve</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+
+
+
+  <div class=" container" style="margin:100px; background-color: white">
+
+    <center>
+      <h2 style="color:#FFB03B"><b>LOGIN FORM </b></h2>
+    </center>
+
+    <form action="server.php" method="POST">
+      <div class="imgcontainer">
+        <img src="img/avatar.jpg" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <button type="submit" onclick="myFunction()">Login</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+
+      </div>
+
+    </form>
+  </div>
+  <script>
+    function myFunction() {
+      var txt;
+      if (confirm("Press OK to continue..!!")) {
+        txt = "You pressed OK!";
+      } else {
+        txt = "You pressed Cancel!";
+      }
+    }
+  </script>
+
+  <footer class="footer text-center">
+    <div class="footer-top">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6 text-center">
+          <div class="widget">
+            <h4 class="widget-title">Online Food Court Services</h4>
+
+            <address>Adjacent to TCS Adibatla<br>Hyderabad-501510<br>thefoodtrain3008@gmail.com</address>
+
+            <div class="social-list">
+              <a href="https://www.instagram.com/akhil_the_food_train/"><img src="img/instagram.png"> </a>
+              <a href="https://m.facebook.com/The-Food-Train-372415413585878/"><img
+                  src="img/imageedit_1_3740057647.png"></a>
+            </div>
+            <p class="copyright clear-float">
+              © Copyright. All Rights Reserved
+              <div class="credits">
+                <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Online Food Court Services
+                -->
+                Designed by TeamC2
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
