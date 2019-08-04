@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OFCS/reserve</title>
+
+    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+    <meta name="keywords"
+        content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="img/favicon.gif">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+                    style:width="auto">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+                <img class="navbar-brand" style="height:100px; padding: 0px;" src="img/pl.png">
+
+                <a class="navbar-brand" style="padding-top:40px;" href="/">Online Food Court Services</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="navbar-brand" style="padding-top:40px;" href="/">Home</a></li>
+                    <li><a class="navbar-brand" style="padding-top:40px;" href="/events">Event</a></li>
+                    <li><a class="navbar-brand" style="padding-top:40px;" href="/menu">Menu</a></li>
+                    @if(!auth)
+                    <li><a class="navbar-brand" style="padding-top:40px;" href="/auth/login">Login</a></li>
+                    <li><a class="navbar-brand" style="padding-top:40px;" href="/auth/register">Sign
+                            up</a></li>
+                    @endif
+                    @if(auth)
+                    <li><a class="navbar-brand" style="padding-top:40px;" href="/auth/logout">Logout</a></li>
+                    @endif
+                    <li><a class="navbar-brand" style="padding-top:40px;" href="/reserve">Reserve</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+    <style>
+        #contact {
+            background-color: rgba(221, 221, 221, 0.33);
+        }
+    </style>
+
+    <br><br>
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="header-h">Book Your table</h1>
+
+                </div>
+            </div>
+            <div class="row msg-row">
+                <div class="col-md-4 col-sm-4 mr-15">
+                    <div class="media-2">
+                        <div class="media-left">
+                            <div class="contact-phone bg-1 text-center"><span class="phone-in-talk fa fa-phone"></span>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="dark-blue regular">Phone Numbers</h4>
+                            <p class="light-blue regular alt-p">+91 9182059450 - <span class="contacts-sp">Phone
+                                    Booking</span></p>
+                        </div>
+                    </div>
+                    <div class="media-2">
+                        <div class="media-left">
+                            <div class="contact-email bg-14 text-center"><span class="hour-icon fa fa-clock-o"></span>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="dark-blue regular">Opening Hours</h4>
+                            <p class="light-blue regular alt-p"> Monday to Friday 09.00 - 24:00</p>
+                            <p class="light-blue regular alt-p">
+                                Friday and Sunday 08:00 - 03.00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-8">
+                    <form action="" method="post" role="form" class="contactForm">
+                        <div id="sendmessage">Your booking request has been sent. Thank you!</div>
+                        <div id="errormessage"></div>
+                        <div class="col-md-6 col-sm-6 contact-form pad-form">
+                            <div class="form-group label-floating is-empty">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validation"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 col-sm-6 contact-form">
+                            <div class="form-group">
+                                <input type="date" class="form-control label-floating is-empty" name="date" id="date"
+                                    placeholder="Date" data-rule="required" data-msg="This field is required" />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 contact-form pad-form">
+                            <div class="form-group">
+                                <input type="email" class="form-control label-floating is-empty" name="email" id="email"
+                                    placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 contact-form">
+                            <div class="form-group">
+                                <input type="time" class="form-control label-floating is-empty" name="time" id="time"
+                                    placeholder="Time" data-rule="required" data-msg="This field is required" />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 contact-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control label-floating is-empty" name="phone" id="phone"
+                                    placeholder="Phone" data-rule="required" data-msg="This field is required" />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 contact-form">
+                            <div class="form-group">
+                                <input type="number" class="form-control label-floating is-empty" name="quantity"
+                                    min="1" max="10" id="people" placeholder="No.of People" data-rule="required"
+                                    data-msg="This field is required" />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 contact-form">
+                            <div class="form-group label-floating is-empty">
+                                <textarea class="form-control" name="message" rows="5" rows="3" data-rule="required"
+                                    data-msg="Please write something for us" placeholder="Message"></textarea>
+                                <div class="validation"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12 btnpad">
+                            <div class="contacts-btn-pad">
+                                <button class="contacts-btn" onclick="myfunction()">Book Table</button> &nspb; <button
+                                    class="contacts-btn" formaction="menu.html">Book Food Items</button>
+                                <p id="adi"></p>
+                                <script>
+                                    function myfunction() {
+                                        var login;
+                                        var a;
+                                        if (login = true) {
+                                            a = " table booked"
+                                        } else {
+                                            a = "pls login"
+
+                                        } document.getElementById("adi").innerHTML = a;
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- / contact -->
+    <!-- footer -->
+    <footer class="footer text-center">
+        <div class="footer-top">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6 text-center">
+                    <div class="widget">
+                        <h4 class="widget-title">Online Food Court Services</h4>
+                        <address>Adjacent to TCS Adibatla<br>Telangana, TS 110013<br>thefoodtrain3008@gmail.com
+                        </address>
+                        <div class="social-list">
+                            <a href="https://www.instagram.com/akhil_the_food_train/"><img src="img/instagram.png"> </a>
+                            <a href="https://m.facebook.com/The-Food-Train-372415413585878/"><img
+                                    src="img/imageedit_1_3740057647.png"></a>
+                        </div>
+                        <p class="copyright clear-float">
+                            © copyright. All Rights Reserved
+                            <div class="credits">
+                                <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Online Food Court Services
+                -->
+                                Designed by TeamC2
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- / footer -->
+
+</body>
+
+</html>

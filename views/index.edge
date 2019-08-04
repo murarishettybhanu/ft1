@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Food Court Services</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords"
+    content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="img/favicon.gif">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!--banner-->
+  <!-- start section navbar -->
+  <section id="banner">
+    <div class="bg-color" style=" background-color:#000;
+        min-height: 630px;">
+      <header id="header">
+        <div class="container">
+          <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+                  style:width="auto">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+
+                </button>
+                <img class="navbar-brand" style="height:100px; padding: 0px;" src="img/pl.png">
+
+                <a class="navbar-brand" style="padding-top:40px;" href="/">Online Food Court Services</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a class="navbar-brand" style="padding-top:40px;" href="/">Home</a></li>
+                  <li><a class="navbar-brand" style="padding-top:40px;" href="/events">Event</a></li>
+                  <li><a class="navbar-brand" style="padding-top:40px;" href="/menu">Menu</a></li>
+                  @if(!auth)
+                  <li><a class="navbar-brand" style="padding-top:40px;" href="/auth/login">Login</a></li>
+                  <li><a class="navbar-brand" style="padding-top:40px;" href="/auth/register">Sign
+                      up</a></li>
+                  @endif
+                  @if(auth)
+                  <li><a class="navbar-brand" style="padding-top:40px;" href="/auth/logout">Logout</a></li>
+                  @endif
+                  <li><a class="navbar-brand" style="padding-top:40px;" href="/reserve">Reserve</a></li>
+                </ul>
+
+              </div>
+            </div>
+
+          </nav>
+        </div>
+      </header>
+
+
+      <div class="container">
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/banner1.jpg" alt="">
+              <div class="carousel-caption">
+
+                <h1 class="logo-name" align-content:center>Online Food Court Services</h1>
+                <br><BR></BR>
+                <div class="fod">
+                  <h2>
+                    The First Ever BBQ Engine Smoker
+                    <br>
+                    <H3> Specialized in BBQ and Biryani!</H3>
+                  </h2>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/banner3.jpg" alt="">
+              <div class="carousel-caption">
+                <h1 class="logo-name" align-content:center>Online Food Court Services</h1>
+                <br><BR></BR>
+                <div class="fod">
+                  <h2>
+                    The First Ever BBQ Engine Smoker
+                    <br>
+                    <H3> Specialized in BBQ and Biryani!</H3>
+                  </h2>
+
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/banner2.jpg" alt="">
+              <div class="carousel-caption">
+                <h1 class="logo-name" align-content:center>Online Food Court Services</h1>
+                <br><BR></BR>
+                <div class="fod">
+                  <h2>
+                    The First Ever BBQ Engine Smoker
+                    <br>
+                    <H3> Specialized in BBQ and Biryani!</H3>
+                  </h2>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/fried-chicken.jpg" alt="">
+              <div class="carousel-caption">
+                <h1 class="logo-name" align-content:center>Online Food Court Services</h1>
+                <br><BR></BR>
+                <div class="fod">
+                  <h2>
+                    The First Ever BBQ Engine Smoker
+                    <br>
+                    <H3> Specialized in BBQ and Biryani!</H3>
+                  </h2>
+
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/banner4.jpg" alt="">
+              <div class="carousel-caption">
+                <h1 class="logo-name" align-content:center>Online Food Court Services</h1>
+                <br><BR></BR>
+                <div class="fod">
+                  <h2>
+                    The First Ever BBQ Engine Smoker
+                    <br>
+                    <H3> Specialized in BBQ and Biryani!</H3>
+                  </h2>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / banner -->
+  <!--about-->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center marb-35">
+          <h1 class="header-h">About Online Food Court Services </h1>
+          <p class="header-p">
+            <h4>
+              Welcome to Online Food Court Services The Food Train restaurant. </h4><br>
+            <h4>
+              We have been providing fresh, fast, and friendly Indian food to all our customers.<br>
+              Online Food Court Services isn’t just about authentic Indian food, it specializes in high standard, fresh
+              and healthy food with affordable prices.
+            </h4>
+            <br>
+          </p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="col-md-6 col-sm-6">
+            <div class="about-info">
+              <h2 class="heading">The First Ever Engine BBQ Smoker</h2>
+              </p> Our food is cooked fresh to the customer’s order and taste.<br>
+              You are guaranteed the freshness of your order. <div class="details-list">
+                <ul>
+                  <li> <i class="fa fa-check"></i>BBQ items are prepared inside this Smoker(Steam engine Replica)</li>
+                  <li> <i class="fa fa-check"></i>we use charcoal briquettes as the fuel and fire power for cooking</li>
+                  <li> <i class="fa fa-check"></i>If you love a good outdoor relaxing atmosphere,then this place is for
+                    you</li>
+                  <li> <i class="fa fa-check"></i>A place dedicated to you favourite peoples in the world- your gangs.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <img src="img/res011.jpeg" alt="" class="img-responsive">
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+  </section>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+  </style>
+  <div class="row">
+    <div class="column">
+      <img src="img/IMG_20190114_220311.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="img/IMG_20190114_221722.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="img/imageedit_6_5841161474.jpg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+
+
+  <!--/about-->
+  <footer class="footer text-center">
+    <div class="footer-top">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6 text-right">
+          <div class="widget">
+
+
+            <h4 class="widget-title">Online Food Court Services</h4>
+            <!-- Start of WebFreeCounter Code -->
+            <a href="https://www.webfreecounter.com/" target="_blank"><img
+                src="https://www.webfreecounter.com/hit.php?id=zemndxd&nd=6&style=7" border="0" alt="hit counter"></a>
+            <!-- End of WebFreeCounter Code -->
+            <br>
+            <br>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!4v1547644976911!6m8!1m7!1sCAoSLEFGMVFpcE5yMG1BNFV0aDNiYVdQQjViVlMtVlowcS1wTGJMVjhmX1dYT0lQ!2m2!1d17.2340802!2d78.56344589999999!3f187.08357229496397!4f6.686964798997863!5f0.7820865974627469"
+              width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <br>
+            <br>
+
+            <address>Adjacent to TCS Adibatla<br>Hyderabad-501510<br>thefoodtrain3008@gmail.com</address>
+            <div class="social-list">
+              <a href="https://www.instagram.com/akhil_the_food_train/"><img src="img/instagram.png"> </a>
+              <a href="https://m.facebook.com/The-Food-Train-372415413585878/"><img
+                  src="img/imageedit_1_3740057647.png"></a>
+            </div>
+            <p class="copyright clear-float">
+              © Copyright. All Rights Reserved
+              <div class="credits">
+                <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Online Food Court Services
+                -->
+                Designed by TeamC2
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+</body>
+
+</html>
