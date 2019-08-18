@@ -1,8 +1,10 @@
 const Post = require('../database/models/Post')
+const User = require('../database/models/User')
 
 module.exports = async (req, res) => {
-  const post = await Post.findById(req.params.id).populate('author');
+  const users = await User.findOne({_id:req.session.userId});
+  const posts = await Post.find({}).populate('author');
   res.render("post", {
-    post
+    posts,users
   });
 }

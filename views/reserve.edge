@@ -47,8 +47,8 @@
                     @endif
                     @if(auth)
                     <li><a class="navbar-brand" style="padding-top:40px;" href="/auth/logout">Logout</a></li>
-                    @endif
                     <li><a class="navbar-brand" style="padding-top:40px;" href="/reserve">Reserve</a></li>
+                    @endif
                 </ul>
 
             </div>
@@ -79,7 +79,7 @@
                         </div>
                         <div class="media-body">
                             <h4 class="dark-blue regular">Phone Numbers</h4>
-                            <p class="light-blue regular alt-p">+91 9182059450 - <span class="contacts-sp">Phone
+                            <p class="light-blue regular alt-p">+91 9182059450 <span class="contacts-sp">Phone
                                     Booking</span></p>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-8">
-                    <form action="" method="post" role="form" class="contactForm">
+                    <form action="/posts/store" method="post" role="form" class="contactForm">
                         <div id="sendmessage">Your booking request has been sent. Thank you!</div>
                         <div id="errormessage"></div>
                         <div class="col-md-6 col-sm-6 contact-form pad-form">
@@ -155,7 +155,7 @@
                         </div>
                         <div class="col-md-12 btnpad">
                             <div class="contacts-btn-pad">
-                                <button class="contacts-btn" onclick="myfunction()">Book Table</button> &nspb; <button
+                                <button class="contacts-btn">Book Table</button> &nspb; <button
                                     class="contacts-btn" formaction="menu.html">Book Food Items</button>
                                 <p id="adi"></p>
                                 <script>

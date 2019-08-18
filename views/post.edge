@@ -1,34 +1,23 @@
-@layout('layouts.app')
-
-@section('content')
-    <!-- Page Header -->
-    <header class="masthead" style="background-image: url('{{ post.image }}')">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="post-heading">
-              <h1>{{ post.title }}</h1>
-              <h2 class="subheading">{{ post.subtitle }}</h2>
-              <span class="meta">Posted by
-                <a href="#">{{ post.author.username }}</a>
-                on {{ post.createdAt.toDateString() }}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Post Content -->
-    <article>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            {{{ post.content }}}
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <hr>
-@endsection
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  @each(post in posts)
+  {{ post.name }}
+  {{post.date}}
+  {{post.email}}
+  {{post.time}}
+  {{post.quantity}}
+  {{post.message}}
+<p>Table booked by: {{users.username}}</p>
+<p>Table booked on: {{post.createdAt}}</p>
+<hr>
+@endeach
+<a href="/"><button class="btn btn-primary">BACK</button></a>
+</body>
+</html>
