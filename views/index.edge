@@ -15,6 +15,7 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="icon" href="img/favicon.gif">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -55,6 +56,9 @@
                   @if(auth)
                   <li><a class="navbar-brand" style="padding-top:40px;" href="/auth/logout">Logout</a></li>
                   <li><a class="navbar-brand" style="padding-top:40px;" href="/reserve">Reserve</a></li>
+                  <li><a class="navbar-brand" style="padding-top:40px;" href="/"><i class="fa fa-user-circle-o"></i>
+                      {{user.username}}</a></li>
+
                   @endif
                 </ul>
 
@@ -249,13 +253,10 @@
       <div class="row">
         <div class="col-md-offset-3 col-md-6 text-right">
           <div class="widget">
-
+<center>
 
             <h4 class="widget-title">Online Food Court Services</h4>
-            <!-- Start of WebFreeCounter Code -->
-            <a href="https://www.webfreecounter.com/" target="_blank"><img
-                src="https://www.webfreecounter.com/hit.php?id=zemndxd&nd=6&style=7" border="0" alt="hit counter"></a>
-            <!-- End of WebFreeCounter Code -->
+            
             <br>
             <br>
             <iframe
@@ -286,6 +287,7 @@
         </div>
       </div>
     </div>
+    </center>
   </footer>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.easing.min.js"></script>

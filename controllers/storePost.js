@@ -7,6 +7,6 @@ module.exports = (req, res) => {
       ...req.body,
       author: req.session.userId
     }, (error, post) => {
-      res.redirect("/");
+      res.redirect("/menu");
     });
 }

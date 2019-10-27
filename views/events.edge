@@ -54,6 +54,8 @@
                     @if(auth)
                     <li><a class="navbar-brand" style="padding-top:40px;" href="/auth/logout">Logout</a></li>
                     <li><a class="navbar-brand" style="padding-top:40px;" href="/reserve">Reserve</a></li>
+                    <li><a class="navbar-brand" style="padding-top:40px;" href="/"><i class="fa fa-user-circle-o"></i>
+                            {{user.username}}</a></li>
                     @endif
                 </ul>
 
@@ -92,7 +94,7 @@
                                         06:30 PM onwards
                                         Every Friday !
                                     </address>
-                                    <a class="btn btn-imfo btn-read-more" href="reserve.html">Book a Table</a>
+                                    <a class="btn btn-imfo btn-read-more" href="/reserve">Book a Table</a>
                                 </div>
                             </div>
                         </div>

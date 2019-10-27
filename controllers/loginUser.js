@@ -10,12 +10,15 @@ module.exports = (req, res) => {
       bcrypt.compare(password, user.password, (error, same) => {
         if (same) {
           req.session.userId = user._id
+          req.flash('loginSucces','You Are Logged In')
           res.redirect('/')
         } else {
+          req.flash('IncorrectPwd','You Have Entered an Incorrect Password')
           res.redirect('/auth/login')
         }
       })
     } else { 
+      req.flash('EmailNotFound','Email id not found please sign up')
       return res.redirect('/auth/login')
     }
   })
